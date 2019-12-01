@@ -53,7 +53,19 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
+            <plugin>
+                <groupId>org.apache.maven.release</groupId>
+                <artifactId>maven-release</artifactId>
+                <version>2.5.3</version>
+                <configuration>
+                    <goals>install</goals>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
 
+    <scm>
+        <developerConnection>scm:git:git@github.com:lucascalsilva/sb-joke-app.git</developerConnection>
+        <tag>HEAD</tag>
+    </scm>
 </project>
