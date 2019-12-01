@@ -35,7 +35,7 @@ class SbJokeAppApplicationTests {
     void testJokeService(){
         String uuidJoke = UUID.randomUUID().toString();
         when(jokeService.getRandomJoke()).thenReturn(uuidJoke);
-        assertThat(jokesController.getJoke(model)).asString().isEqualTo("joke");
+        assertThat(jokesController.getJoke(model)).asString().isEqualTo("jokes");
     }
 
 }
