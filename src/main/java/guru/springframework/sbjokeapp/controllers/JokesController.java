@@ -21,7 +21,7 @@ public class JokesController {
     @GetMapping
     public String getJoke(Model model){
         model.addAttribute("joke", jokeService.getRandomJoke());
-        return "joke";
+        return "jokes";
     }
 
 }
